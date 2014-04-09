@@ -1,4 +1,6 @@
 Typify::Application.routes.draw do
+  root 'person#index'
+
   get "person/new"
   get "person/show"
   get "person/index"

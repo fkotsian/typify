@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140409053106) do
+ActiveRecord::Schema.define(version: 20140409064027) do
 
   create_table "people", force: true do |t|
     t.integer  "i_rating"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20140409053106) do
     t.integer  "num_skips"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_loc"
   end
 
 end
