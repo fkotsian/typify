@@ -1,7 +1,8 @@
 Typify::Application.routes.draw do
-  root 'person#index'   # Will change to StaticPages#home
+  root 'static_pages#home'   # Will change to StaticPages#home
 
   match '/random', to: 'person#random', via: 'get'
+  match '/all',    to: 'person#index' , via: 'get'
 
   get "static_pages/home"
   get "person/new"

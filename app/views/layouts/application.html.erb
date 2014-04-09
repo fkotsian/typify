@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= full_title( yield(:title) ) %></title>
+  <title>Typify</title>
   <%= stylesheet_link_tag    "application", media: "all",
                             "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-  <--[if lt IE 9]>
+  <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5/js"></script>
   <![endif]-->
 </head>
@@ -17,13 +17,14 @@
         <%= link_to "sample app", '#', id: "logo" %>
         <nav>
           <ul class="nav pull-right">
+            <li><%= link_to "Home",        'StaticPages#home' %></li>
             <li><%= link_to "All People",  'Person#index' %></li>
             <li><%= link_to "New Person",  'Person#new' %></li>
             <li><%= link_to "Sign In",     '#' %></li>
           </ul>
         </nav>
       </div>
-    </div<>>
+    </div>
   </header>
   <div class="container">
       <%= yield %>

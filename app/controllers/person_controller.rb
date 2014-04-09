@@ -9,10 +9,12 @@ class PersonController < ApplicationController
   end
 
   def random
-    selected_person = Person.all(:order => 'RANDOM()', :limit => 1)
-    selected_person.update_attribute("views", selected_person.views + 1) # updates .views count on this Person's record
+    selected_person = Person.first(:order => 'RANDOM()')
+    selected_person.increment_views  # updates .views count on this Person's record
 
     redirect_to selected_person
+    #for now
+    flash[:notice] = "Approval Period Updated"
   end
 
   #def rate  #?  => handles button click?
