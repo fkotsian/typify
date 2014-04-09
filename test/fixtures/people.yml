@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  i_rating: 1
+  e_rating: 1
+  s_rating: 1
+  n_rating: 1
+  t_rating: 1
+  f_rating: 1
+  j_rating: 1
+  p_rating: 1
+  num_views: 1
+  num_ratings: 1
+  num_skips: 1
+
+two:
+  i_rating: 1
+  e_rating: 1
+  s_rating: 1
+  n_rating: 1
+  t_rating: 1
+  f_rating: 1
+  j_rating: 1
+  p_rating: 1
+  num_views: 1
+  num_ratings: 1
+  num_skips: 1
